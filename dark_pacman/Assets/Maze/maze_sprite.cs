@@ -20,6 +20,20 @@ public class maze_sprite : MonoBehaviour
     public void SetSprite(Sprite sprite)
     {
         SetSprite(sprite, 0);
+    }
 
+    public void delete()
+    {
+        Destroy(this);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        FindObjectOfType<maze_gen_script>().mazeHeight += 2;
+        FindObjectOfType<maze_gen_script>().mazeWidth += 2;
+        FindObjectOfType<maze_gen_script>().mazeSeed += "to";
+        FindObjectOfType<maze_gen_script>().Delete_maze();
+        FindObjectOfType<maze_gen_script>().Start_gen();
+        Destroy(this);
     }
 }

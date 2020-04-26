@@ -15,11 +15,18 @@ public class maze_gen_script : MonoBehaviour
 
     public maze_sprite mazeSpritePrefab;
 
+    public GameObject player;
+
     System.Random mazeRG;
 
     Maze maze;
 
     void Start()
+    {
+        Start_gen();
+    }
+
+    public void Start_gen()
     {
         mazeRG = new System.Random(mazeSeed.GetHashCode());
 
@@ -37,14 +44,28 @@ public class maze_gen_script : MonoBehaviour
         DrawMaze();
     }
 
+    public void Delete_maze()
+    {
+        var Wally = GameObject.FindGameObjectsWithTag("Wall");
+        foreach (var item in Wally)
+        {
+            Destroy(item);
+        }
+    }
+
     void DrawMaze()
     {
         for (int x = 0; x < mazeWidth; x++)
         {
             for (int y = 0; y < mazeHeight; y++)
             {
-                Vector3 position = new Vector3(x - 10, y - 6);
+                Vector3 position = new Vector3(x, y);
+                if (x == 1 && y == 1)
+                {
+                    position.z = -1;
+                    player.transform.position = position;
 
+                }
                 if (maze.Grid[x, y] == true)
                 {
                     CreateMazeSprite(position, floorSprite, transform, 0, 0);
@@ -66,7 +87,7 @@ public class maze_gen_script : MonoBehaviour
         bool right = GetMazeGridCell(x + 1, y);
         bool left = GetMazeGridCell(x - 1, y);
 
-        Vector3 position = new Vector3(x - 10 , y - 6);
+        Vector3 position = new Vector3(x , y);
 
         if (top)
         {
@@ -125,7 +146,11 @@ public class maze_gen_script : MonoBehaviour
         mazeSprite.SetSprite(sprite, sortingOrder);
         mazeSprite.transform.SetParent(parent);
         mazeSprite.transform.Rotate(0, 0, rotation);
-        if (sprite == floorSprite)
+        if (position.x == mazeWidth - 2 && position.y == mazeHeight - 2)
+            mazeSprite.GetComponent<BoxCollider2D>().isTrigger = true;
+        else if (sprite == floorSprite)
             mazeSprite.GetComponent<BoxCollider2D>().enabled = false;
+        else
+            mazeSprite.gameObject.tag = "Wall";
     }
 }

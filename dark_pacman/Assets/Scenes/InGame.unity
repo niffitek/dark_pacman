@@ -183,7 +183,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.27055892, g: 0.5317286, b: 0.6037736, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -338,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &861216918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62be0de8e043ee64eb5d9cc2607c3886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazeWidth: 20
+  mazeWidth: 21
   mazeHeight: 13
   mazeSeed: toto
   floorSprite: {fileID: 0}
@@ -522,6 +522,7 @@ MonoBehaviour:
   wallSprite: {fileID: 21300000, guid: 12dd659954292a94c8e0e22b1e7429e9, type: 3}
   wallCornerSprite: {fileID: 21300000, guid: 12dd659954292a94c8e0e22b1e7429e9, type: 3}
   mazeSpritePrefab: {fileID: 129066627}
+  player: {fileID: 1511641149}
 --- !u!4 &1053139086
 Transform:
   m_ObjectHideFlags: 0
@@ -839,7 +840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511641149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.47, y: 0.99, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 545737986}
@@ -859,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45636d05585074c469f3a17606b77469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 0.01
+  move_speed: 0.05
   animator: {fileID: 1511641153}
   light: {fileID: 1970128881}
   x: 0
