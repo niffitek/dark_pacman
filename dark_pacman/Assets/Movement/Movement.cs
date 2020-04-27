@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -70,6 +71,15 @@ public class Movement : MonoBehaviour
             light_pos.y = player_pos.y;
             x = 0;
             y = 90;
+        }
+        else if (Input.GetKey(KeyCode.Space))
+        {
+            move_vec.x = 1;
+            move_vec.y = 1;
+        }
+        else if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("main_menu");
         }
         else
         {
