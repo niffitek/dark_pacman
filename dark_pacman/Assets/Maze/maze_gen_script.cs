@@ -16,7 +16,9 @@ public class maze_gen_script : MonoBehaviour
 
     public maze_sprite mazeSpritePrefab;
 
+    public GameObject itemWall;
     public GameObject player;
+    public GameObject itemTime;
 
     System.Random mazeRG;
 
@@ -150,8 +152,26 @@ public class maze_gen_script : MonoBehaviour
         if (position.x == mazeWidth - 2 && position.y == mazeHeight - 2)
             mazeSprite.GetComponent<BoxCollider2D>().isTrigger = true;
         else if (sprite == floorSprite)
+        {
+            int r = Random.Range(0, 50);
+            if (r == 4)
+            {
+                GameObject it = (GameObject)Instantiate(itemWall, position, Quaternion.identity);
+                it.GetComponent<BoxCollider2D>().isTrigger = true;
+                it.name = "itemWall";
+            }
+            if (r == 3)
+            {
+                GameObject it = (GameObject)Instantiate(itemTime, position, Quaternion.identity);
+                it.GetComponent<BoxCollider2D>().isTrigger = true;
+                it.name = "itemTime";
+            }
             mazeSprite.GetComponent<BoxCollider2D>().enabled = false;
+        }
         else
+        {
             mazeSprite.gameObject.tag = "Wall";
+            mazeSprite.name = "Wall";
+        }
     }
 }
