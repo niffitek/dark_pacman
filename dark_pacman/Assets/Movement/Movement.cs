@@ -5,7 +5,7 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class Movement : MonoBehaviour
 {
-    public float move_speed;
+    public float move_speed = 0.1f;
     public Animator animator;
     public GameObject light;
     public int x, y, z;

@@ -31,7 +31,10 @@ public class maze_sprite : MonoBehaviour
     {
         FindObjectOfType<maze_gen_script>().mazeHeight += 2;
         FindObjectOfType<maze_gen_script>().mazeWidth += 2;
+        FindObjectOfType<maze_gen_script>().level += 1;
         FindObjectOfType<maze_gen_script>().mazeSeed += "to";
+        FindObjectOfType<Text_handler>().time_left += 15;
+        FindObjectOfType<Score_saver>().level = FindObjectOfType<maze_gen_script>().level;
         FindObjectOfType<maze_gen_script>().Delete_maze();
         FindObjectOfType<maze_gen_script>().Start_gen();
         Destroy(this);

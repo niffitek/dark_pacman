@@ -7,6 +7,7 @@ public class maze_gen_script : MonoBehaviour
     public int mazeWidth;
     public int mazeHeight;
     public string mazeSeed;
+    public int level;
 
     public Sprite floorSprite;
     public Sprite roofSprite;
