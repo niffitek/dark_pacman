@@ -168,7 +168,6 @@ public class maze_gen_script : MonoBehaviour
         }
         else if (sprite == floorSprite)
         {
-            int x = level;
             int r = Random.Range(0, 50 + level);
             if (r == 4)
             {

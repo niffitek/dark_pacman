@@ -24,6 +24,7 @@ public class itemWithPlayer : MonoBehaviour
         {
             lighttime = 5;
             my_pointlight.range = 1000;
+            my_pointlight.intensity = 5;
             Destroy(collision.gameObject, 0);
         }
     }
@@ -47,6 +48,7 @@ public class itemWithPlayer : MonoBehaviour
         if (my_pointlight.range == 1000 && lighttime <= 0)
         {
             my_pointlight.range = 3;
+            my_pointlight.intensity = 31;
         }
     }
 }
