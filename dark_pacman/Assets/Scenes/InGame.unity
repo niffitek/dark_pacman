@@ -1161,6 +1161,7 @@ MonoBehaviour:
   roofSprite: {fileID: 21300000, guid: 12dd659954292a94c8e0e22b1e7429e9, type: 3}
   wallSprite: {fileID: 21300000, guid: 12dd659954292a94c8e0e22b1e7429e9, type: 3}
   wallCornerSprite: {fileID: 21300000, guid: 12dd659954292a94c8e0e22b1e7429e9, type: 3}
+  endSprite: {fileID: 21300000, guid: a987ea47bde3ae440855b4723eb0d16c, type: 3}
   mazeSpritePrefab: {fileID: 129066627}
   itemWall: {fileID: 1125166707}
   player: {fileID: 1511641149}
@@ -2252,15 +2253,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5662691035074785113, guid: 39f964207ff3c5449a0d916d77d85e4c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.27, y: 0.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1870926969

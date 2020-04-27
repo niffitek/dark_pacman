@@ -13,6 +13,7 @@ public class maze_gen_script : MonoBehaviour
     public Sprite roofSprite;
     public Sprite wallSprite;
     public Sprite wallCornerSprite;
+    public Sprite endSprite;
 
     public maze_sprite mazeSpritePrefab;
 
@@ -51,7 +52,17 @@ public class maze_gen_script : MonoBehaviour
     public void Delete_maze()
     {
         var Wally = GameObject.FindGameObjectsWithTag("Wall");
+        var ending = GameObject.FindGameObjectsWithTag("End");
+        var items = GameObject.FindGameObjectsWithTag("Items");
         foreach (var item in Wally)
+        {
+            Destroy(item);
+        }
+        foreach (var item in ending)
+        {
+            Destroy(item);
+        }
+        foreach (var item in items)
         {
             Destroy(item);
         }
@@ -150,28 +161,35 @@ public class maze_gen_script : MonoBehaviour
         mazeSprite.SetSprite(sprite, sortingOrder);
         mazeSprite.transform.SetParent(parent);
         mazeSprite.transform.Rotate(0, 0, rotation);
-        if (position.x == mazeWidth - 2 && position.y == mazeHeight - 2)
+        if (position.x == mazeWidth - 2 && position.y == mazeHeight - 2) {
             mazeSprite.GetComponent<BoxCollider2D>().isTrigger = true;
+            mazeSprite.SetSprite(endSprite, sortingOrder);
+            mazeSprite.gameObject.tag = "End";
+        }
         else if (sprite == floorSprite)
         {
-            int r = Random.Range(0, 50);
+            int x = level;
+            int r = Random.Range(0, 50 + level);
             if (r == 4)
             {
                 GameObject it = (GameObject)Instantiate(itemWall, position, Quaternion.identity);
                 it.GetComponent<BoxCollider2D>().isTrigger = true;
                 it.name = "itemWall";
+                it.tag = "Items";
             }
             if (r == 11)
             {
                 GameObject it = (GameObject)Instantiate(itemTime, position, Quaternion.identity);
                 it.GetComponent<BoxCollider2D>().isTrigger = true;
                 it.name = "itemTime";
+                it.tag = "Items";
             }
             if (r == 3)
             {
                 GameObject it = (GameObject)Instantiate(BigLight, position, Quaternion.identity);
                 it.GetComponent<BoxCollider2D>().isTrigger = true;
                 it.name = "BigLight";
+                it.tag = "Items";
             }
             mazeSprite.GetComponent<BoxCollider2D>().enabled = false;
         }

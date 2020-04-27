@@ -63,23 +63,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11198}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13604}
+      Script: {instanceID: 13598}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13700}
     - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14340}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -128,31 +128,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11198}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11436}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12248}
+      Script: {instanceID: 12242}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12988}
     - Class: 114
-      Script: {instanceID: 13186}
+      Script: {instanceID: 13180}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13604}
+      Script: {instanceID: 13598}
+    - Class: 114
+      Script: {instanceID: 13700}
     - Class: 114
       Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13712}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 14004}
-    - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14340}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,31 +193,31 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11198}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13294}
+      Script: {instanceID: 13288}
     - Class: 114
-      Script: {instanceID: 13604}
+      Script: {instanceID: 13598}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13700}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 13992}
     - Class: 114
-      Script: {instanceID: 14176}
+      Script: {instanceID: 14170}
     - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14340}
     - Class: 114
-      Script: {instanceID: 14418}
+      Script: {instanceID: 14412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -591,7 +591,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 338ed01c7b58e2870d6f3501a70d1556
+      Hash: 17e5c72b1d383515f39349a4a195a2cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: maze_gen_script
@@ -966,4 +966,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/main_menu.unity
   - Assets/Scenes/InGame.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/Marcel/Epitech/dark_pacman/dark_pacman.exe
+  playerPath: C:/Users/serha/Downloads/dark_pacman.exe
