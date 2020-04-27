@@ -19,6 +19,7 @@ public class maze_gen_script : MonoBehaviour
     public GameObject itemWall;
     public GameObject player;
     public GameObject itemTime;
+    public GameObject BigLight;
 
     System.Random mazeRG;
 
@@ -160,11 +161,17 @@ public class maze_gen_script : MonoBehaviour
                 it.GetComponent<BoxCollider2D>().isTrigger = true;
                 it.name = "itemWall";
             }
-            if (r == 3)
+            if (r == 11)
             {
                 GameObject it = (GameObject)Instantiate(itemTime, position, Quaternion.identity);
                 it.GetComponent<BoxCollider2D>().isTrigger = true;
                 it.name = "itemTime";
+            }
+            if (r == 3)
+            {
+                GameObject it = (GameObject)Instantiate(BigLight, position, Quaternion.identity);
+                it.GetComponent<BoxCollider2D>().isTrigger = true;
+                it.name = "BigLight";
             }
             mazeSprite.GetComponent<BoxCollider2D>().enabled = false;
         }

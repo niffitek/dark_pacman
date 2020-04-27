@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Movement
     - Score_saver
     - Text_handler
+    - itemWithPlayer
     - mainMenu
     - maze_gen_script
     - maze_sprite
@@ -62,23 +63,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12512}
     - Class: 114
-      Script: {instanceID: 13264}
+      Script: {instanceID: 12922}
     - Class: 114
-      Script: {instanceID: 13592}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13694}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 17688}
+      Script: {instanceID: 14346}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -127,29 +128,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 11436}
     - Class: 114
-      Script: {instanceID: 12238}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 13174}
+      Script: {instanceID: 12248}
     - Class: 114
-      Script: {instanceID: 13264}
+      Script: {instanceID: 12994}
     - Class: 114
-      Script: {instanceID: 13592}
+      Script: {instanceID: 13186}
     - Class: 114
-      Script: {instanceID: 13694}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13700}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 16330}
+      Script: {instanceID: 13712}
     - Class: 114
-      Script: {instanceID: 18294}
+      Script: {instanceID: 14004}
+    - Class: 114
+      Script: {instanceID: 14346}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,31 +193,31 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12266}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12922}
     - Class: 114
-      Script: {instanceID: 13264}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 13592}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13694}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13986}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 14162}
+      Script: {instanceID: 14176}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 14346}
     - Class: 114
-      Script: {instanceID: 14404}
+      Script: {instanceID: 14418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -268,6 +271,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e90fae471cbca6ac796cdf088af5ad19
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: itemWithPlayer
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -358,6 +367,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 55d79ebf350b4ff5c8de69e3704d0c6a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Text_handler
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -498,6 +513,12 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+      Hash: 0d2dfb27dd46973bb971b7544ba881f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver_UI
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -570,7 +591,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: a4b4481938563cc873e9653060215e81
+      Hash: 338ed01c7b58e2870d6f3501a70d1556
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: maze_gen_script
@@ -804,6 +825,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: cd834e47ad508d50b131c462fe606645
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score_saver
+  - hash:
+      serializedVersion: 2
       Hash: e80c1450883443c68d6c2dade213536f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -934,27 +961,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 55d79ebf350b4ff5c8de69e3704d0c6a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Text_handler
-  - hash:
-      serializedVersion: 2
-      Hash: 0d2dfb27dd46973bb971b7544ba881f2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameOver_UI
-  - hash:
-      serializedVersion: 2
-      Hash: cd834e47ad508d50b131c462fe606645
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Score_saver
   platform: 5
   scenePathNames:
   - Assets/Scenes/main_menu.unity
   - Assets/Scenes/InGame.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/Niklas Scheffler/GitHub/dark_pacman/build_v1/dark_pacman.exe
+  playerPath: C:/Users/Marcel/Epitech/dark_pacman/dark_pacman.exe

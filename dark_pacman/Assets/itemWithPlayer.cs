@@ -5,6 +5,8 @@ using UnityEngine;
 public class itemWithPlayer : MonoBehaviour
 {
     private static int nb = 0;
+    public Light my_pointlight;
+    private float lighttime = 0;
     public bool col = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,6 +18,12 @@ public class itemWithPlayer : MonoBehaviour
         if (collision.name == "itemTime")
         {
             FindObjectOfType<Text_handler>().time_left += 15;
+            Destroy(collision.gameObject, 0);
+        }
+        if (collision.name == "BigLight")
+        {
+            lighttime = 5;
+            my_pointlight.range = 1000;
             Destroy(collision.gameObject, 0);
         }
     }
@@ -30,6 +38,15 @@ public class itemWithPlayer : MonoBehaviour
                 col = true;
                 nb = 0;
             }
+        }
+    }
+
+    private void Update()
+    {
+        lighttime -= Time.deltaTime;
+        if (my_pointlight.range == 1000 && lighttime <= 0)
+        {
+            my_pointlight.range = 3;
         }
     }
 }
